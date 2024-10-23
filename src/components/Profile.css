@@ -1,0 +1,38 @@
+/* src/components/Profile.css */
+.profile-container {
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #2d3436;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #636e72;
+  }
+  
+  button {
+    background-color: #0984e3;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #74b9ff;
+    transform: scale(1.05);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
