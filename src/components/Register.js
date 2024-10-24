@@ -12,7 +12,8 @@ const Register = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://13.48.190.30:5000/api/register', { username, password });
+      const response = await axios.post('http://13.48.190.30:5000/api/register', { username, password });  //Change to Your desired Address
+      const { user } = res.data;
       alert(response.data.message);
       navigate('/login');
     } catch (error) {
