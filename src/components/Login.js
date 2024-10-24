@@ -12,7 +12,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://13.48.190.30:5000/api/login', { username, password });
+      const res = await axios.post('http://13.48.190.30:5000/api/login', { username, password }); //Your desired Address
       const { user } = res.data;
       localStorage.setItem('username', user.username);
       navigate('/profile');
